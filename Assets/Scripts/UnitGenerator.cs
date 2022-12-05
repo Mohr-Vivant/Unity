@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UnitGenerator : MonoBehaviour
 {
+    public Money Money;
     public KeyCode key;
     public GameObject unit;
     public GameObject spawnPoint;
@@ -21,10 +22,13 @@ public class UnitGenerator : MonoBehaviour
     {
         if(Input.GetKeyDown(key))
         {
-            UnitSpawn();
+            if (Money.money >= 5)
+            {
+                Money.money -= Money.cost;
+                UnitSpawn();
+            }
         }
     }
-
     void UnitSpawn()
     {
         Instantiate(unit, spawnPosition, Quaternion.AngleAxis(0, spawnPosition));
