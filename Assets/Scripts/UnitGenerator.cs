@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class UnitGenerator : MonoBehaviour
 {
-    public KeyCode key;
     public GameObject unit;
     public GameObject spawnPoint;
     private Vector3 spawnPosition;
@@ -19,10 +18,7 @@ public class UnitGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(key))
-        {
-            UnitSpawn();
-        }
+
     }
 
     void UnitSpawn()

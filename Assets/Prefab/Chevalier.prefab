@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7555351172520935615}
   - component: {fileID: 2373367084611118155}
-  - component: {fileID: 5855490819365799648}
   - component: {fileID: 1817118259821326191}
+  - component: {fileID: 5543405672752011285}
+  - component: {fileID: 3646297819547026946}
   m_Layer: 8
   m_Name: Chevalier
   m_TagString: Untagged
@@ -86,19 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5855490819365799648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772137685319990706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 633d331b744d71e4cb5c9c6eb99bf8d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: -1
 --- !u!50 &1817118259821326191
 Rigidbody2D:
   serializedVersion: 4
@@ -114,9 +102,48 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &5543405672752011285
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772137685319990706}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.13441992, y: -2.0669699}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.49, y: 20}
+    newSize: {x: 11.49, y: 20}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.9735556, y: 15.86606}
+  m_EdgeRadius: 0
+--- !u!114 &3646297819547026946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772137685319990706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633d331b744d71e4cb5c9c6eb99bf8d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -1
